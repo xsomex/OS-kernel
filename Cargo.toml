@@ -4,8 +4,7 @@ version = "0.0.0"
 edition = "2024"
 
 [dependencies]
-common = { path = "../common/" }
+common = { git = "https://codeberg.org/xsomex/OS-common.git" }
 
-display_text = { path = "../modules/interfaces/display_text/", features = ["processor_graphics"] }
-memory = { path = "../modules/interfaces/memory/", features = ["paging_recursive"] }
-
+display_text = { git = "https://codeberg.org/xsomex/OS-modules_display-text.git", features = ["processor_graphics"] }
+#memory = { path = "../modules/interfaces/memory/", features = ["paging_recursive"] }

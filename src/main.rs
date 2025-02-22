@@ -29,7 +29,6 @@ fn start(info: &mut common::bootloader_api::BootInfo) -> ! {
     set_background_color!(255, 0, 0);
     set_foreground_color!(0, 255, 0);
     println!("IDT loaded");
-    memory::test();
     loop {}
 }
 
