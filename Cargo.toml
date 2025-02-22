@@ -1,0 +1,11 @@
+[package]
+name = "kernel"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+common = { path = "../common/" }
+
+display_text = { path = "../modules/interfaces/display_text/", features = ["processor_graphics"] }
+memory = { path = "../modules/interfaces/memory/", features = ["paging_recursive"] }
+
